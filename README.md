@@ -23,3 +23,6 @@ push it to AWS
 ```
 docker push 664574038682.dkr.ecr.eu-central-1.amazonaws.com/my-app:1.1
 ```
+
+## deploy the images in Docker Repository to the Server
+
