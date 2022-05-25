@@ -12,7 +12,7 @@ run the docker image
 docker run my-app:1.0
 ```
 
-## Jenkins does for Docker Repository
+## Jenkins does for Docker Repository (normally need to login to the private Repo/ AWS)
 
 rename
 ```
