@@ -52,3 +52,20 @@ Named Volumes: reference volumes by names, actually in use
 docker run
     -v name:conatiner_directory
 ```
+
+## cheatsheet
+
+show all running containers
+```
+docker ps
+```
+
+show all containers
+```
+docker ps -a
+```
+
+run the console inside one container
+```
+docker exec -it {hash_value} sh
+```
