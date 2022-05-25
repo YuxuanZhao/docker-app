@@ -1,4 +1,4 @@
-# 安装node
+# 安装node和node所依赖的alpine，指定版本，其实每一个container还会依赖别的container，层叠关系
 FROM node:13-alpine
 
 # 设定参数
