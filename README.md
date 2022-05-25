@@ -30,3 +30,25 @@ use the docker compose to utilize the docker-compose.yaml with the setup of itse
 ```
 docker-compose -f mongo.yaml up
 ```
+
+## Docker Volume ( Data Persistency )
+
+mount physical folder to the container, so it will keep the data
+
+Host Volumes: define explicitly
+```
+docker run 
+    -v host_directory:container_directory
+```
+
+Anonymous Volumes: folder is generated in the phyiscal machine
+```
+docker run 
+    -v container_directory
+```
+
+Named Volumes: reference volumes by names, actually in use
+```
+docker run
+    -v name:conatiner_directory
+```

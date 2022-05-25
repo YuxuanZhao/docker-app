@@ -11,8 +11,8 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=admin
       - MONGO_INITDB_ROOT_PASSWORD=password
-    volumes:
-      - mongo-data:/data/db
+    volumes: # mapping the host-volume-name : path-inside-container
+      - mongo-data:/data/db # mysql is var/lib/mysql, postgres is var/lib/postgresql/data
   mongo-express:
     image: mongo-express
     restart: always # fixes MongoNetworkError when mongodb is not ready when mongo-express starts
@@ -22,6 +22,6 @@ services:
       - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
       - ME_CONFIG_MONGODB_ADMINPASSWORD=password
       - ME_CONFIG_MONGODB_SERVER=mongodb
-volumes:
+volumes: # list all
   mongo-data:
     driver: local
