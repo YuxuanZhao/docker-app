@@ -1,6 +1,8 @@
 # docker-app
 
-build a docker image basing the Dockerfile (normally what Jenkins does in CI)
+## Jenkins does in CI
+
+build a docker image basing the Dockerfile
 ```
 docker build -t my-app:1.0 .
 ```
@@ -9,6 +11,8 @@ run the docker image
 ```
 docker run my-app:1.0
 ```
+
+## Jenkins does for Docker Repository
 
 rename
 ```
